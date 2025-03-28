@@ -1,0 +1,60 @@
+boss:
+  maxHealth: 100.0
+
+abilities:
+  carrotMissile:
+    frequency: 100
+    velocityMultiplier: 0.7
+    damage: 4.0
+  burrow:
+    frequency: 200
+    burrowDepth: 2
+    reappearDelay: 40
+  summonMiniBunnies:
+    frequency: 300
+    count: 3  # not used with new spawn formula, just fallback
+  healPhase:
+    frequency: 400
+    healDelay: 200
+    healPercent: 0.10
+    runAwayDistance: 5.0
+
+scale:
+  boss: 1.0
+  miniBunny: 0.5
+
+scaling:
+  enabled: true
+  radius: 20.0
+  healthMultiplier: 0.5
+  miniRabbitMultiplier: 0.5
+
+damageReduction:
+  enabled: true
+  reductionPerMini: 0.05
+
+miniBunny:
+  deathEffects:
+    - "POISON"
+    - "WEAKNESS"
+    - "BLINDNESS"
+    - "JUMP_BOOST"
+    - "REGENERATION"
+  effectDuration: 200
+  effectAmplifier: 1
+  effectRadius: 7
+
+potionEffects:
+  jump: "JUMP_BOOST"
+  slow: "SLOWNESS"
+
+chat:
+  carrotMissile: "&eThe Mad Hare hurls explosive carrots!"
+  burrow: "&7The Mad Hare burrows underground..."
+  summonMiniBunnies:
+    normal: "&aThe Mad Hare summons mini bunnies!"
+    damageReduction: "&cThe Mad Hare summons mini bunnies to protect itself!"
+  healPhase:
+    start: "&dThe Mad Hare begins healing! Healing in %seconds% seconds..."
+    interrupted: "&cThe Mad Hare's healing was interrupted!"
+  bossDeath: "&6The Mad Hare has been defeated!"

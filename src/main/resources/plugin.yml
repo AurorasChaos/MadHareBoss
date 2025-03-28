@@ -1,0 +1,20 @@
+name: MadHarePlugin
+version: 1.0
+main: com.AurorasChaos.madhare.MadHarePlugin
+api-version: 1.21
+author: AurorasChoas
+description: Easter-themed Minecraft Spigot plugin featuring The Mad Hare boss fight.
+commands:
+  summonmad:
+    description: Summon The Mad Hare boss.
+    permission: madhare.summon
+  madreload:
+    description: Reload the MadHarePlugin configuration.
+    permission: madhare.reload
+permissions:
+  madhare.summon:
+    description: Allows summoning the Mad Hare
+    default: op
+  madhare.reload:
+    description: Allows reloading the MadHare config
+    default: op
