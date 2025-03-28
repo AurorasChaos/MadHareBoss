@@ -1,4 +1,4 @@
-  - name: Compile Minecraft Spigot (via BuildTools)
+            - name: Compile Minecraft Spigot (via BuildTools)
   # You may pin to the exact commit or the version.
   # uses: SpraxDev/Action-SpigotMC@9b1d0b9ab5b00b145af715d791711bcd5a9b3c18
   uses: SpraxDev/Action-SpigotMC@v5.1.0
