@@ -1,0 +1,32 @@
+  - name: Compile Minecraft Spigot (via BuildTools)
+  # You may pin to the exact commit or the version.
+  # uses: SpraxDev/Action-SpigotMC@9b1d0b9ab5b00b145af715d791711bcd5a9b3c18
+  uses: SpraxDev/Action-SpigotMC@v5.1.0
+  with:
+    # Versions to build (separate multiple with ',')
+    versions: # optional, default is latest
+    # Should sources be generated?
+    generateSrc: # optional, default is false
+    # Should use the SpecialSource Plugin of md_5 to deobfuscate Mojang-NMS-Packets
+    remapped: # optional, default is false
+    # Should the documentation be generated?
+    generateDoc: # optional, default is false
+    # Should we disable the BuildTools's Java-Version-Check
+    disableJavaCheck: # optional, default is false
+    # Disables the check for existing files in the local maven repository
+    forceRun: # optional, default is false
+    # The amount of builds allowed to run at a time, set to '-1' to use system's cpu count
+    threads: # optional, default is -1
+    # Whose BuildTool should be used? (SpigotMC [default])
+    buildToolProvider: # optional, default is SpigotMC
+    # The host of the SFTP-Server to use as dedicated artifact cache
+    sftpCacheHost: # optional, default is 
+    # The port of the SFTP-Server to use as dedicated artifact cache
+    sftpCachePort: # optional, default is 22
+    # The username of the SFTP-Server to use as dedicated artifact cache
+    sftpCacheUser: # optional, default is 
+    # The private key of the SFTP-Server to use as dedicated artifact cache
+    sftpCachePrivateKey: # optional, default is 
+    # Setting this to the server's host key, will enable strictly checking the host key (something like `ssh-ed25519 [HASH]` is expected here)
+    sftpCacheExpectedHostKey: # optional, default is 
+          
